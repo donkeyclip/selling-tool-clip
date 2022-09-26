@@ -1,0 +1,112 @@
+<div class="container">
+    <div class="products" mc-for="key,item" mc-of="initParams.products">
+            <div class="product-container product-container-left" mc-if="key % 2 === 0 ">          
+                <div class="balls-container">
+                    <div class="part1">
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                    </div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                    <svg width="0px" height="0px" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="0" cy="0" r="300" />
+                    </svg>
+                </div>
+                <div class="image-wrapper">
+                    <div class="circle circle3"></div>
+                    <div class="circle circle2"></div>
+                    <div class="circle circle1"></div>
+                    <div class="image" style="position: absolute;
+                    top: 37px;
+                    left: 37px;
+                    background-image: url({{item.image}});
+                    width: 225px;
+                    height: 225px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-position:left;"></div>
+                </div>
+                <div class="details">
+                    <div class="name-wrapper">
+                        <div class="name">{{item.name}}</div>
+                    </div>
+                    <div class="description-wrapper">
+                        <div class="description">{{item.description}}</div>
+                    </div>
+                    <div class="price-wrapper">
+                        <div class="price">{{item.price}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container product-container-right" mc-if="key % 2 === 1 ">
+                <div class="balls-container">
+                    <div class="part1">
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                    </div>
+                    <div class="part2">
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                        <div class="sm-ball"></div>
+                    </div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                    <svg width="0px" height="0px" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="0" cy="0" r="300" />
+                    </svg>
+                </div>
+                <div class="image-wrapper">
+                    <div class="circle circle3"></div>
+                    <div class="circle circle2"></div>
+                    <div class="circle circle1"></div>
+                    <div class="image" style="position: absolute;
+                    top: 37px;
+                    left: 37px;
+                    background-image: url({{item.image}});
+                    width: 225px;
+                    height: 225px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-position:left;"></div>
+                </div>
+                <div class="details">
+                    <div class="name-wrapper">
+                        <div class="name">{{item.name}}</div>
+                    </div>
+                    <div class="description-wrapper">
+                        <div class="description">{{item.description}}</div>
+                    </div>
+                    <div class="price-wrapper">
+                        <div class="price">{{item.price}}</div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
