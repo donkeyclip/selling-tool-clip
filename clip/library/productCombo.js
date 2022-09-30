@@ -28,7 +28,7 @@ export const productCombo = (selector, delay = 0) => new Combo(
           },
           props: {
            selector: ".part1",
-           duration: 5500,
+           duration: 4000,
           },
           position: 0
         },
@@ -41,7 +41,7 @@ export const productCombo = (selector, delay = 0) => new Combo(
           },
           props: {
            selector: ".part2",
-           duration: 5500,
+           duration: 4000,
           },
           position: 0
         },
@@ -138,8 +138,8 @@ export const productCombo = (selector, delay = 0) => new Combo(
           },
           props: {
             selector: ".ball",
-            duration: 5000,
-            delay:"@expression(1000*index+200)",
+            duration: 3500,
+            delay:"@expression(500*index)",
           },
           position: 500
         },
@@ -153,8 +153,8 @@ export const productCombo = (selector, delay = 0) => new Combo(
           },
           props: {
             selector: ".ball",
-            duration: 1000,
-            delay:"@expression(1000*index+200)",
+            duration: 500,
+            delay:"@expression(500*index)",
           },
           position: 500
         },
@@ -167,11 +167,26 @@ export const productCombo = (selector, delay = 0) => new Combo(
           },
           props: {
             selector: ".ball",
-            duration: 1200,
+            duration: 1,
+            delay:"@expression(500*index)",
+          },
+          position: 3000
+        },
+        {
+          incidentClass: CSSEffect,
+          attrs: {
+           animatedAttrs: {
+            scale: 0,
+            opacity:0
+           }
+          },
+          props: {
+            selector: ".product-container",
+            duration: 300,
             delay:"@expression(1000*index)",
           },
-          position: 3700
-        }
+          position: 4200
+        },
       ]
     },
     {

@@ -7,7 +7,7 @@ import { productCombo } from "../../library/productCombo";
 const clip = new HTMLClip({
   html,
   css,
-  selector: "#root2",
+  selector: "#scene",
   containerParams: {
     width: "800px",
     height: "450px",
@@ -18,5 +18,5 @@ const clip = new HTMLClip({
   },
 });
 
-clip.addIncident(productCombo(".products","@expression(5000*index)"),0);
+clip.addIncident(productCombo(".products","@expression(3900*index)"),0);
 export default clip;

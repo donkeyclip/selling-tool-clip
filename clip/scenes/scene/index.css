@@ -1,6 +1,6 @@
 *{
     --background-color: {{ initParams.stylesheet.backgroundColor }};
-    --font-color: {{ initParams.stylesheet.fontsColor }};
+    --font-color: {{ initParams.stylesheet.fontColor }};
     --image-background-color: {{ initParams.stylesheet.imageBackgroundColor }};
     --primary-color: {{ initParams.stylesheet.primaryColor }};
 }
@@ -25,7 +25,6 @@
     width: 800px;
     height: 450px;
     position: absolute;
-    
 }
 
 .product-container-left{
@@ -162,7 +161,7 @@
 .sm-ball{
     width: 30px;
     aspect-ratio: 1/1;
-    background-color: blue;
+    background-color: var(--primary-color);
     border-radius: 100%;
     opacity: 0;
 }

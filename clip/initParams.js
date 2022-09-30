@@ -8,10 +8,6 @@ export default [
         imageBackgroundColor:"white",
         primaryColor:"blue"
       },
-      company:{
-        name:"AthleticsLine",
-        quote:"Branded Bikes, Scooters, Skateboards & Accessories."
-      },
       products:[
         {
           image:"https://donkeyclip.github.io/selling-tool-clip/server/assets/picture-bicycle.png",

@@ -2,9 +2,7 @@ import { HTMLClip } from "@donkeyclip/motorcortex";
 import html from "./clip.html";
 import css from "./clip.css";
 import initParams from "./initParams";
-import scene1 from "./scenes/scene-1";
-import scene2 from "./scenes/scene-2";
-import outro from "./scenes/outro";
+import scene from "./scenes/scene";
 import initParamsValidationRules from "./initParamsValidationRules";
 
 export const clip = new HTMLClip({
@@ -25,6 +23,4 @@ export const clip = new HTMLClip({
   ],
 });
 
-clip.addIncident(scene1, 0);
-clip.addIncident(outro, 0);
-clip.addIncident(scene2,2500);
+clip.addIncident(scene,0);

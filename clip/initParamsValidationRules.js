@@ -9,14 +9,6 @@ export default {
       primaryColor: { type: "color" },
     }
   },
-  company:{
-    label: "Company",
-    type: "object",
-    props: {
-      name: { type: "string" },
-      quote: { type: "string" },
-    }
-  },
   products:{
     label: "Products",
     type: "array",
