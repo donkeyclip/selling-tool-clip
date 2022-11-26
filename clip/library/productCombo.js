@@ -92,6 +92,9 @@ export const productCombo = (selector, delay = 0) => new Combo(
          {
           incidentClass: CSSEffect,
           attrs: {
+            initialValues: {
+              top: "-120%",
+            },
            animatedAttrs: {
              top:"0px"
            }
