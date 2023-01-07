@@ -109,4 +109,55 @@
                 </div>
             </div>
     </div>
+    <div class="outro">
+        <div class="balls-container">
+            <div class="part1">
+                <div class="sm-ball"></div>
+                <div class="sm-ball"></div>
+                <div class="sm-ball"></div>
+                <div class="sm-ball"></div>
+                <div class="sm-ball"></div>
+                <div class="sm-ball"></div>
+                <div class="sm-ball"></div>
+            </div>
+            <div class="part2">
+                <div class="sm-ball"></div>
+                <div class="sm-ball"></div>
+                <div class="sm-ball"></div>
+                <div class="sm-ball"></div>
+                <div class="sm-ball"></div>
+                <div class="sm-ball"></div>
+                <div class="sm-ball"></div>
+            </div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <svg width="0px" height="0px" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="0" cy="0" r="300" />
+            </svg>
+        </div>
+        <div class="outro-products" mc-for="key,item" mc-of="initParams.products">
+            <div class="image-wrapper">
+                <div class="circle circle3"></div>
+                <div class="circle circle2"></div>
+                <div class="circle circle1"></div>
+                <div class="image" style="position: absolute;
+                top: 30px;
+                left: 30px;
+                background-image: url({{item.image}});
+                width: 150px;
+                height: 150px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-position:left;"></div>
+                <div class="price-wrapper">
+                    <div class="price">{{item.price}}</div>
+                </div>
+                <div class="cta-wrapper">
+                    <div class="buy">Buy now</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

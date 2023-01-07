@@ -3,7 +3,7 @@ import { loadPlugin } from "@donkeyclip/motorcortex";
 import AnimePluginDefinition from "@donkeyclip/motorcortex-anime";
 const AnimePlugin = loadPlugin(AnimePluginDefinition);
 
-export const productCombo = (selector, delay = 0) => new Combo(
+export const outroCombo = (selector) => new Combo(
     {
       incidents:[
         {
@@ -23,12 +23,12 @@ export const productCombo = (selector, delay = 0) => new Combo(
           incidentClass: CSSEffect,
           attrs: {
            animatedAttrs: {
-             right:"@expression(random(20,90))%"
+             right:"-100%"
            }
           },
           props: {
            selector: ".part1",
-           duration: 4000,
+           duration: 5000,
           },
           position: 0
         },
@@ -36,12 +36,12 @@ export const productCombo = (selector, delay = 0) => new Combo(
           incidentClass: CSSEffect,
           attrs: {
            animatedAttrs: {
-            left:"@expression(random(20,90))%"
+            left:"-100%"
            }
           },
           props: {
            selector: ".part2",
-           duration: 4000,
+           duration: 5000,
           },
           position: 0
         },
@@ -66,11 +66,36 @@ export const productCombo = (selector, delay = 0) => new Combo(
            }
           },
           props: {
-           selector: ".circle",
+           selector: ".circle3",
            duration: 700,
-           delay:"@stagger(0,300)"
           },
           position: 0
+         },
+         {
+          incidentClass: CSSEffect,
+          attrs: {
+           animatedAttrs: {
+             scale:1
+           }
+          },
+          props: {
+           selector: ".circle2",
+           duration: 700,
+          },
+          position: 150
+         },
+         {
+          incidentClass: CSSEffect,
+          attrs: {
+           animatedAttrs: {
+             scale:1
+           }
+          },
+          props: {
+           selector: ".circle1",
+           duration: 700,
+          },
+          position: 300
          },
          {
           incidentClass: CSSEffect,
@@ -87,35 +112,6 @@ export const productCombo = (selector, delay = 0) => new Combo(
            duration: 700,
           },
           position: 0
-         },
-         {
-          incidentClass: CSSEffect,
-          attrs: {
-            initialValues: {
-              top: "-120%",
-            },
-           animatedAttrs: {
-             top:"0px"
-           }
-          },
-          props: {
-           selector: ".name",
-           duration: 700,
-          },
-          position: 1000
-         },
-         {
-          incidentClass: CSSEffect,
-          attrs: {
-           animatedAttrs: {
-             bottom:"0px"
-           }
-          },
-          props: {
-           selector: ".description",
-           duration: 700,
-          },
-          position: 1000
          },
          {
           incidentClass: CSSEffect,
@@ -178,21 +174,18 @@ export const productCombo = (selector, delay = 0) => new Combo(
           incidentClass: CSSEffect,
           attrs: {
            animatedAttrs: {
-            scale: 0,
-            opacity:0
+            opacity: 0.9,
            }
           },
           props: {
-            selector: ".product-container",
+            selector: ".cta-wrapper",
             duration: 300,
-            delay:"@expression(1000*index)",
           },
-          position: 4200
+          position: 2500
         },
       ]
     },
     {
       selector,
-      delay
     }
     );
