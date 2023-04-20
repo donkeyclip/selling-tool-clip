@@ -1,9 +1,11 @@
-import { HTMLClip } from "@donkeyclip/motorcortex";
+import { HTMLClip, setCSSCore } from "@donkeyclip/motorcortex";
 import html from "./clip.html";
 import css from "./clip.css";
 import initParams from "./initParams";
 import scene from "./scenes/scene";
 import initParamsValidationRules from "./initParamsValidationRules";
+import AnimePluginDefinition from "@donkeyclip/motorcortex-anime";
+setCSSCore(AnimePluginDefinition.CSSEffect);
 
 export const clip = new HTMLClip({
   html,
@@ -23,4 +25,4 @@ export const clip = new HTMLClip({
   ],
 });
 
-clip.addIncident(scene,0);
+clip.addIncident(scene, 0);
